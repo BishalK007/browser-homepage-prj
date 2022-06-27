@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html
+    style="--theme-primary-1-r: 0; --theme-primary-1-g: 0; --theme-primary-1-b: 0; --theme-primary-1-h: 0; --theme-primary-1-s: 0; --theme-primary-1-l: 0; --theme-primary-2-r: 20; --theme-primary-2-g: 20; --theme-primary-2-b: 20; --theme-primary-2-h: 0; --theme-primary-2-s: 0; --theme-primary-2-l: 8; --theme-primary-3-r: 38; --theme-primary-3-g: 38; --theme-primary-3-b: 38; --theme-primary-3-h: 0; --theme-primary-3-s: 0; --theme-primary-3-l: 15; --theme-primary-4-r: 59; --theme-primary-4-g: 59; --theme-primary-4-b: 59; --theme-primary-4-h: 0; --theme-primary-4-s: 0; --theme-primary-4-l: 23; --theme-primary-5-r: 79; --theme-primary-5-g: 79; --theme-primary-5-b: 79; --theme-primary-5-h: 0; --theme-primary-5-s: 0; --theme-primary-5-l: 31; --theme-primary-6-r: 97; --theme-primary-6-g: 97; --theme-primary-6-b: 97; --theme-primary-6-h: 0; --theme-primary-6-s: 0; --theme-primary-6-l: 38; --theme-primary-7-r: 117; --theme-primary-7-g: 117; --theme-primary-7-b: 117; --theme-primary-7-h: 0; --theme-primary-7-s: 0; --theme-primary-7-l: 46; --theme-primary-8-r: 138; --theme-primary-8-g: 138; --theme-primary-8-b: 138; --theme-primary-8-h: 0; --theme-primary-8-s: 0; --theme-primary-8-l: 54; --theme-primary-9-r: 158; --theme-primary-9-g: 158; --theme-primary-9-b: 158; --theme-primary-9-h: 0; --theme-primary-9-s: 0; --theme-primary-9-l: 62; --theme-primary-10-r: 176; --theme-primary-10-g: 176; --theme-primary-10-b: 176; --theme-primary-10-h: 0; --theme-primary-10-s: 0; --theme-primary-10-l: 69; --theme-primary-11-r: 196; --theme-primary-11-g: 196; --theme-primary-11-b: 196; --theme-primary-11-h: 0; --theme-primary-11-s: 0; --theme-primary-11-l: 77; --theme-primary-12-r: 217; --theme-primary-12-g: 217; --theme-primary-12-b: 217; --theme-primary-12-h: 0; --theme-primary-12-s: 0; --theme-primary-12-l: 85; --theme-primary-13-r: 235; --theme-primary-13-g: 235; --theme-primary-13-b: 235; --theme-primary-13-h: 0; --theme-primary-13-s: 0; --theme-primary-13-l: 92; --theme-primary-14-r: 255; --theme-primary-14-g: 255; --theme-primary-14-b: 255; --theme-primary-14-h: 0; --theme-primary-14-s: 0; --theme-primary-14-l: 100; --theme-primary-1: var(--theme-primary-1-h), calc(var(--theme-primary-1-s) * 1%), calc(var(--theme-primary-1-l) * 1%); --theme-primary-2: var(--theme-primary-2-h), calc(var(--theme-primary-2-s) * 1%), calc(var(--theme-primary-2-l) * 1%); --theme-primary-3: var(--theme-primary-3-h), calc(var(--theme-primary-3-s) * 1%), calc(var(--theme-primary-3-l) * 1%); --theme-primary-4: var(--theme-primary-4-h), calc(var(--theme-primary-4-s) * 1%), calc(var(--theme-primary-4-l) * 1%); --theme-primary-5: var(--theme-primary-5-h), calc(var(--theme-primary-5-s) * 1%), calc(var(--theme-primary-5-l) * 1%); --theme-primary-6: var(--theme-primary-6-h), calc(var(--theme-primary-6-s) * 1%), calc(var(--theme-primary-6-l) * 1%); --theme-primary-7: var(--theme-primary-7-h), calc(var(--theme-primary-7-s) * 1%), calc(var(--theme-primary-7-l) * 1%); --theme-primary-8: var(--theme-primary-8-h), calc(var(--theme-primary-8-s) * 1%), calc(var(--theme-primary-8-l) * 1%); --theme-primary-9: var(--theme-primary-9-h), calc(var(--theme-primary-9-s) * 1%), calc(var(--theme-primary-9-l) * 1%); --theme-primary-10: var(--theme-primary-10-h), calc(var(--theme-primary-10-s) * 1%), calc(var(--theme-primary-10-l) * 1%); --theme-primary-11: var(--theme-primary-11-h), calc(var(--theme-primary-11-s) * 1%), calc(var(--theme-primary-11-l) * 1%); --theme-primary-12: var(--theme-primary-12-h), calc(var(--theme-primary-12-s) * 1%), calc(var(--theme-primary-12-l) * 1%); --theme-primary-13: var(--theme-primary-13-h), calc(var(--theme-primary-13-s) * 1%), calc(var(--theme-primary-13-l) * 1%); --theme-primary-14: var(--theme-primary-14-h), calc(var(--theme-primary-14-s) * 1%), calc(var(--theme-primary-14-l) * 1%); --theme-font-display-name: &quot;Macondo&quot;, &quot;Fjalla One&quot;, sans-serif; --theme-font-ui-name: &quot;Macondo&quot;, &quot;Open Sans&quot;, sans-serif; --theme-accent-rgb-r: 255; --theme-accent-rgb-g: 255; --theme-accent-rgb-b: 255; --theme-accent-hsl-h: 0; --theme-accent-hsl-s: 0; --theme-accent-hsl-l: 100; --theme-font-display-weight: 400; --theme-font-display-style: normal; --theme-font-ui-weight: 400; --theme-font-ui-style: normal; --theme-opacity-general: 100; --theme-background-color-rgb-r: 23; --theme-background-color-rgb-g: 36; --theme-background-color-rgb-b: 64; --theme-background-color-hsl-h: 221; --theme-background-color-hsl-s: 47; --theme-background-color-hsl-l: 17; --theme-background-image-blur: 0; --theme-background-image-grayscale: 0; --theme-background-image-scale: 100; --theme-background-image-accent: 0; --theme-background-image-opacity: 100; --theme-background-image-vignette-opacity: 0; --theme-background-image-vignette-start: 90; --theme-background-image-vignette-end: 70; --theme-background-video-blur: 0; --theme-background-video-grayscale: 0; --theme-background-video-scale: 100; --theme-background-video-accent: 0; --theme-background-video-opacity: 100; --theme-background-video-vignette-opacity: 0; --theme-background-video-vignette-start: 90; --theme-background-video-vignette-end: 70; --theme-background-gradient-angle: 160; --theme-background-gradient-start-rgb-r: 86; --theme-background-gradient-start-rgb-g: 104; --theme-background-gradient-start-rgb-b: 118; --theme-background-gradient-start-hsl-h: 206; --theme-background-gradient-start-hsl-s: 16; --theme-background-gradient-start-hsl-l: 40; --theme-background-gradient-end-rgb-r: 22; --theme-background-gradient-end-rgb-g: 28; --theme-background-gradient-end-rgb-b: 39; --theme-background-gradient-end-hsl-h: 219; --theme-background-gradient-end-hsl-s: 28; --theme-background-gradient-end-hsl-l: 12; --theme-radius: 70; --theme-shadow: 234; --theme-shade-opacity: 0; --theme-shade-blur: 0; --theme-layout-color-rgb-r: 0; --theme-layout-color-rgb-g: 0; --theme-layout-color-rgb-b: 0; --theme-layout-color-hsl-h: 0; --theme-layout-color-hsl-s: 0; --theme-layout-color-hsl-l: 0; --theme-layout-color-opacity: 10; --theme-layout-color-blur: 0; --theme-layout-divider-size: 0; --theme-header-color-rgb-r: 0; --theme-header-color-rgb-g: 0; --theme-header-color-rgb-b: 0; --theme-header-color-hsl-h: 0; --theme-header-color-hsl-s: 0; --theme-header-color-hsl-l: 0; --theme-header-color-opacity: 10; --theme-header-search-opacity: 100; --theme-bookmark-color-rgb-r: 0; --theme-bookmark-color-rgb-g: 0; --theme-bookmark-color-rgb-b: 0; --theme-bookmark-color-hsl-h: 0; --theme-bookmark-color-hsl-s: 0; --theme-bookmark-color-hsl-l: 0; --theme-bookmark-color-opacity: 10; --theme-bookmark-item-opacity: 100; --theme-toolbar-opacity: 100; --theme-group-toolbar-opacity: 100; --layout-size: 100; --layout-width: 80; --layout-area-header-width: 100; --layout-area-bookmark-width: 100; --layout-padding: 40; --layout-gutter: 20; --toolbar-size: 100; --header-greeting-size: 100; --header-transitional-size: 100; --header-clock-size: 100; --header-date-size: 100; --header-search-size: 127; --header-search-width-size: 30; --group-name-size: 100; --group-toolbar-size: 100; --bookmark-size: 100;"
+    class="is-theme-style-dark is-theme-background-type-gradient is-theme-layout-color-by-theme is-theme-header-color-by-theme is-theme-bookmark-color-by-theme is-layout-alignment-center-center is-layout-direction-vertical is-layout-order-header-bookmark is-layout-area-header-justify-center is-layout-area-bookmark-justify-center is-layout-scrollbar-auto is-toolbar-location-header is-toolbar-position-bottom-right is-header-show is-header-item-justify-left is-header-search-width-by-auto is-header-search-text-justify-left is-group-area-justify-left is-group-order-header-body is-bookmark-item-justify- is-bookmark-orientation-bottom is-bookmark-style-block is-bookmark-show is-bookmark-hoverscale-show is-bookmark-shadow-show is-bookmark-line-show is-bookmark-url-show is-layout-breakpoint-xl wf-macondo-n1-active wf-macondo-i1-active wf-macondo-n2-active wf-macondo-i2-active wf-macondo-n3-active wf-macondo-i3-active wf-macondo-n4-active wf-macondo-i4-active wf-macondo-n5-active wf-macondo-i5-active wf-macondo-n6-active wf-macondo-i6-active wf-macondo-n7-active wf-macondo-i7-active wf-macondo-n8-active wf-macondo-i8-active wf-macondo-n9-active wf-macondo-i9-active wf-active"
+    lang="en"> 
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>New Tab</title>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script defer="defer" src="New%20Tab_files/clock1.js"></script>
+    <link href="New%20Tab_files/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <div class="theme-background-type theme-background-type-theme"></div>
+        <div class="theme-background-type theme-background-type-accent"></div>
+        <div class="theme-background-type theme-background-type-color"></div>
+        <div class="theme-background-type theme-background-type-gradient"></div>
+        <div class="theme-background-type theme-background-type-image">
+            <div class="theme-background-type-image-wrap"></div>
+            <div class="theme-background-type-image-accent"></div>
+            <div class="theme-background-type-image-vignette"></div>
+        </div>
+        <div class="theme-background-type theme-background-type-video">
+            <div class="theme-background-type-video-wrap"></div>
+            <div class="theme-background-type-video-accent"></div>
+            <div class="theme-background-type-video-vignette"></div>
+        </div>
+    </div>
+    <div class="layout">
+        <div class="layout-header">
+            <div class="header-area">
+                <header class="header">
+                    <div class="header-item header-item-greeting">
+                    </div>
+                    <div class="header-item header-item-clock">
+                        <div class="header-item-content">
+                            <div class="header-item-control">
+                                <div class="header-item-control-group form-group form-group-horizontal"><button
+                                        class="button header-control-button header-control-sort button-line"
+                                        tabindex="1" type="button" title="Drag header item to reorder"
+                                        disabled="disabled"><span class="icon"><svg version="1.1" viewBox="0 0 24 24"
+                                                width="24" height="24" fill="currentColor">
+                                                <path
+                                                    d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                </path>
+                                            </svg></span><span class="button-text sr-only">Drag header item to
+                                            reorder</span></button></div>
+                            </div>
+                            <div class="header-item-body">
+
+
+                                <div id="clock" onload="currentDateTime()"></div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-item header-item-date">
+                        <div class="header-item-content">
+                            <div class="header-item-control">
+                                <div class="header-item-control-group form-group form-group-horizontal"><button
+                                        class="button header-control-button header-control-sort button-line"
+                                        tabindex="1" type="button" title="Drag header item to reorder"
+                                        disabled="disabled"><span class="icon"><svg version="1.1" viewBox="0 0 24 24"
+                                                width="24" height="24" fill="currentColor">
+                                                <path
+                                                    d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                </path>
+                                            </svg></span><span class="button-text sr-only">Drag header item to
+                                            reorder</span></button></div>
+                            </div>
+                            <div class="header-item-body">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-item header-item-search">
+                        <div class="header-item-content">
+                            <div class="header-item-control">
+                                <div class="header-item-control-group form-group form-group-horizontal"><button
+                                        class="button header-control-button header-control-sort button-line"
+                                        tabindex="1" type="button" title="Drag header item to reorder"
+                                        disabled="disabled"><span class="icon"><svg version="1.1" viewBox="0 0 24 24"
+                                                width="24" height="24" fill="currentColor">
+                                                <path
+                                                    d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                </path>
+                                            </svg></span><span class="button-text sr-only">Drag header item to
+                                            reorder</span></button></div>
+                            </div>
+                            <div class="header-item-body">
+                                <div class="search">
+                                    <form class="search-form" action="https://www.google.com/search" method="get"><input
+                                            type="Search" autocomplete="off" autocorrect="off" autocapitalize="none"
+                                            spellcheck="false" tabindex="1" id="header-search-string"
+                                            class="search-input" placeholder="Search Google"
+                                            name="q"><input type="submit" value="Search" class="is-hidden"><button
+                                            class="button search-clear button-link button-line" tabindex="1"
+                                            type="button" title="Clear search"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Clear
+                                                search</span></button></form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </header>
+            </div>
+        </div>
+        <div class="layout-bookmark">
+            <div class="bookmark-area">
+                <div class="bookmark-group">
+                    <div class="group is-group-header is-group-toolbar">
+                        <div class="group-header">
+                            <div class="group-control">
+                                <div class="group-control-group form-group form-group-horizontal"><button
+                                        class="button group-control-button group-control-up button-line" tabindex="1"
+                                        type="button" title="Move this group up" disabled="disabled"><span
+                                            class="icon"><svg version="1.1" viewBox="0 0 24 24" width="24" height="24"
+                                                fill="currentColor">
+                                                <path d="M7.406 15.422l-1.406-1.406 6-6 6 6-1.406 1.406-4.594-4.594z">
+                                                </path>
+                                            </svg></span><span class="button-text sr-only">Move this group
+                                            up</span></button><button
+                                        class="button group-control-button group-control-sort button-line" tabindex="1"
+                                        type="button" title="Drag group to reorder" disabled="disabled"><span
+                                            class="icon"><svg version="1.1" viewBox="0 0 24 24" width="24" height="24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                </path>
+                                            </svg></span><span class="button-text sr-only">Drag group to
+                                            reorder</span></button><button
+                                        class="button group-control-button group-control-up button-line" tabindex="1"
+                                        type="button" title="Move this group right" disabled="disabled"><span
+                                            class="icon"><svg version="1.1" viewBox="0 0 24 24" width="24" height="24"
+                                                fill="currentColor">
+                                                <path d="M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z">
+                                                </path>
+                                            </svg></span><span class="button-text sr-only">Move this group
+                                            down</span></button><button
+                                        class="button group-control-button group-control-edit button-line" tabindex="1"
+                                        type="button" title="Edit this group" disabled="disabled"><span
+                                            class="icon"><svg version="1.1" viewBox="0 0 24 24" width="24" height="24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                </path>
+                                            </svg></span><span class="button-text sr-only">Edit this
+                                            group</span></button><button
+                                        class="button group-control-button group-control-remove button-line"
+                                        tabindex="1" type="button" title="Remove this group" disabled="disabled"><span
+                                            class="icon"><svg version="1.1" viewBox="0 0 24 24" width="24" height="24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                </path>
+                                            </svg></span><span class="button-text sr-only">Remove this
+                                            group</span></button></div>
+                            </div>
+                            <div class="group-name">
+                                <h1 class="group-name-text">tiLEs</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="group-body">
+                            <div class="bookmark is-bookmark-alignment-center-center is-bookmark-order-visual-name is-bookmark-direction-vertical"
+                                style="--bookmark-transition-delay: 0; --theme-bookmark-item-opacity: 100; --bookmark-display-translate-x: 0; --bookmark-display-translate-y: 0; --bookmark-display-rotate: 0; --bookmark-display-gutter: 25; --bookmark-display-visual-size: 36;  --bookmark-display-name-size: 16; --bookmark-border: 0; --bookmark-background-opacity: 100;">
+                                <div class="bookmark-front" id="utube"><a class="bookmark-link" tabindex="1"
+                                        href="https://www.youtube.com/">
+                                        <div class="bookmark-display-wrap">
+                                            <div class="bookmark-display">
+                                                <div class="bookmark-display-visual">
+                                                    <div class="bookmark-display-visual-icon">
+
+                                                        <span class="iconify"
+                                                            data-icon="akar-icons:youtube-fill"></span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="bookmark-display-name">
+                                                    <div class="bookmark-display-name-text">Youtube</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-background-wrap">
+                                            <div class="bookmark-background-image"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="bookmark-back">
+                                    <div class="bookmark-control"><button
+                                            class="button bookmark-control-button bookmark-control-left button-link"
+                                            tabindex="1" type="button" title="Move this bookmark left"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M15.422 16.078l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                left</span></button><button
+                                            class="button bookmark-control-button bookmark-control-sort button-link"
+                                            tabindex="1" type="button" title="Drag bookmark to reorder"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Drag bookmark to
+                                                reorder</span></button><button
+                                            class="button bookmark-control-button bookmark-control-right button-link"
+                                            tabindex="1" type="button" title="Move this bookmark right"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                right</span></button><button
+                                            class="button bookmark-control-button bookmark-control-edit button-link"
+                                            tabindex="1" type="button" title="Edit this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Edit this
+                                                bookmark</span></button><button
+                                            class="button bookmark-control-button bookmark-control-remove button-link"
+                                            tabindex="1" type="button" title="Remove this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Remove this
+                                                bookmark</span></button></div>
+                                    <div class="bookmark-url"><span class="bookmark-url-text"
+                                            title="https://www.youtube.com/">youtube.com</span></div>
+                                </div>
+                            </div>
+                            <div class="bookmark is-bookmark-alignment-center-center is-bookmark-order-visual-name is-bookmark-direction-vertical bookmark-tall bookmark-wide"
+                                style="--bookmark-transition-delay: 1; --theme-bookmark-item-opacity: 100; --bookmark-display-translate-x: 0; --bookmark-display-translate-y: 0; --bookmark-display-rotate: 0; --bookmark-display-gutter: 25; --bookmark-display-visual-size: 68; --bookmark-display-visual-image-url: url(&quot;https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&amp;dl=pexels-pixabay-531880.jpg&amp;fm=jpg&quot;); --bookmark-display-name-size: 15; --bookmark-border: 0; --bookmark-display-visual-shadow-size: 100; --bookmark-display-visual-shadow-offset: 0.1; --bookmark-display-visual-shadow-blur: 0.1; --bookmark-display-visual-shadow-opacity: 0.1; --bookmark-display-visual-shadow: 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 8)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 8))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 1))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 16)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 16))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 2))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 32)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 32))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 3))); --bookmark-background-opacity: 100; --bookmark-background-image-url: url(&quot;https://img.freepik.com/free-photo/wooden-path-inside-forest_78895-1410.jpg?w=996&quot;);">
+                                <div class="bookmark-front" id="manga"><a class="bookmark-link" tabindex="1"
+                                        href="https://mail.google.com/">
+                                        <div class="bookmark-display-wrap">
+                                            <div class="bookmark-display">
+                                                <div class="bookmark-display-visual">
+                                                    <div class="bookmark-display-visual-icon">
+                                                        <span class="iconify" data-icon="mdi:gmail"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="bookmark-display-name">
+                                                    <div class="bookmark-display-name-text">Gmail</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-background-wrap">
+                                            <div class="bookmark-background-image"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="bookmark-back">
+                                    <div class="bookmark-control"><button
+                                            class="button bookmark-control-button bookmark-control-left button-link"
+                                            tabindex="1" type="button" title="Move this bookmark left"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M15.422 16.078l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                left</span></button><button
+                                            class="button bookmark-control-button bookmark-control-sort button-link"
+                                            tabindex="1" type="button" title="Drag bookmark to reorder"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Drag bookmark to
+                                                reorder</span></button><button
+                                            class="button bookmark-control-button bookmark-control-right button-link"
+                                            tabindex="1" type="button" title="Move this bookmark right"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                right</span></button><button
+                                            class="button bookmark-control-button bookmark-control-edit button-link"
+                                            tabindex="1" type="button" title="Edit this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Edit this
+                                                bookmark</span></button><button
+                                            class="button bookmark-control-button bookmark-control-remove button-link"
+                                            tabindex="1" type="button" title="Remove this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Remove this
+                                                bookmark</span></button></div>
+                                    <div class="bookmark-url"><span class="bookmark-url-text"
+                                            title="https://mail.google.com/">mail.google.com</span></div>
+                                </div>
+                            </div>
+                            <div class="bookmark is-bookmark-alignment-center-center is-bookmark-order-visual-name is-bookmark-direction-vertical"
+                                style="--bookmark-transition-delay: 2; --theme-bookmark-item-opacity: 100; --bookmark-display-translate-x: 0; --bookmark-display-translate-y: 0; --bookmark-display-rotate: 0; --bookmark-display-gutter: 13; --bookmark-display-visual-size: 33; --bookmark-display-visual-image-url: url(&quot;&quot;); --bookmark-display-name-size: 14; --bookmark-border: 0; --bookmark-background-opacity: 100; --bookmark-background-image-url: url(&quot;https://images.wallpapersden.com/image/wxl-small-memory_58461.jpg&quot;);">
+                                <div class="bookmark-front" id="manga"><a class="bookmark-link" tabindex="1"
+                                        href="https://mangareader.to/home">
+                                        <div class="bookmark-display-wrap">
+                                            <div class="bookmark-display">
+                                                <div class="bookmark-display-visual">
+                                                    <div class="bookmark-display-visual-icon">
+                                                        <span class="iconify" data-icon="fa-solid:book-open"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="bookmark-display-name">
+                                                    <div class="bookmark-display-name-text">MangaReader.To</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-background-wrap">
+                                            <div class="bookmark-background-image"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="bookmark-back">
+                                    <div class="bookmark-control"><button
+                                            class="button bookmark-control-button bookmark-control-left button-link"
+                                            tabindex="1" type="button" title="Move this bookmark left"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M15.422 16.078l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                left</span></button><button
+                                            class="button bookmark-control-button bookmark-control-sort button-link"
+                                            tabindex="1" type="button" title="Drag bookmark to reorder"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Drag bookmark to
+                                                reorder</span></button><button
+                                            class="button bookmark-control-button bookmark-control-right button-link"
+                                            tabindex="1" type="button" title="Move this bookmark right"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                right</span></button><button
+                                            class="button bookmark-control-button bookmark-control-edit button-link"
+                                            tabindex="1" type="button" title="Edit this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Edit this
+                                                bookmark</span></button><button
+                                            class="button bookmark-control-button bookmark-control-remove button-link"
+                                            tabindex="1" type="button" title="Remove this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Remove this
+                                                bookmark</span></button></div>
+                                    <div class="bookmark-url"><span class="bookmark-url-text"
+                                            title="https://mangareader.to/home">mangareader.to/home</span></div>
+                                </div>
+                            </div>
+                            <div class="bookmark is-bookmark-alignment-center-center is-bookmark-order-visual-name is-bookmark-direction-vertical"
+                                style="--bookmark-transition-delay: 3; --theme-bookmark-item-opacity: 100; --bookmark-display-translate-x: 0; --bookmark-display-translate-y: 0; --bookmark-display-rotate: 0; --bookmark-display-gutter: 25; --bookmark-display-visual-size: 81; --bookmark-display-visual-image-url: url(&quot;https://i.postimg.cc/yNprWXtm/Animix-Play.png&quot;); --bookmark-display-name-size: 7; --bookmark-border: 0; --bookmark-background-opacity: 100; --bookmark-background-image-url: url(&quot;https://wallpapercave.com/wp/wp5499407.jpg&quot;);">
+                                <div class="bookmark-front"><a class="bookmark-link" tabindex="1"
+                                        href="https://animixplay.to/?tab=popular">
+                                        <div class="bookmark-display-wrap">
+                                            <div class="bookmark-display">
+                                                <div class="bookmark-display-visual">
+                                                    <div class="bookmark-display-visual-image"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-background-wrap">
+                                            <div class="bookmark-background-image"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="bookmark-back">
+                                    <div class="bookmark-control"><button
+                                            class="button bookmark-control-button bookmark-control-left button-link"
+                                            tabindex="1" type="button" title="Move this bookmark left"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M15.422 16.078l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                left</span></button><button
+                                            class="button bookmark-control-button bookmark-control-sort button-link"
+                                            tabindex="1" type="button" title="Drag bookmark to reorder"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Drag bookmark to
+                                                reorder</span></button><button
+                                            class="button bookmark-control-button bookmark-control-right button-link"
+                                            tabindex="1" type="button" title="Move this bookmark right"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                right</span></button><button
+                                            class="button bookmark-control-button bookmark-control-edit button-link"
+                                            tabindex="1" type="button" title="Edit this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Edit this
+                                                bookmark</span></button><button
+                                            class="button bookmark-control-button bookmark-control-remove button-link"
+                                            tabindex="1" type="button" title="Remove this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Remove this
+                                                bookmark</span></button></div>
+                                    <div class="bookmark-url"><span class="bookmark-url-text"
+                                            title="https://animixplay.to/?tab=popular">animixplay.to/?tab=popular</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bookmark is-bookmark-alignment-center-center is-bookmark-order-visual-name is-bookmark-direction-vertical bookmark-tall"
+                                style="--bookmark-transition-delay: 4; --theme-bookmark-item-opacity: 100; --bookmark-display-translate-x: 0; --bookmark-display-translate-y: 53; --bookmark-display-rotate: 0; --bookmark-display-gutter: 25; --bookmark-display-visual-size: 47; --bookmark-display-visual-image-url: url(&quot;&quot;); --bookmark-display-name-size: 11; --bookmark-border: 0; --bookmark-background-opacity: 100; --bookmark-background-image-url: url(&quot;https://wallpapers.com/images/high/sakura-tree-in-your-lie-in-april-of56kii74wb4ksls.jpg&quot;);">
+                                <div class="bookmark-front"><a class="bookmark-link" tabindex="1"
+                                        href="https://www.instagram.com/">
+                                        <div class="bookmark-display-wrap">
+                                            <div class="bookmark-display">
+                                                <div class="bookmark-display-visual">
+                                                    <div class="bookmark-display-visual-icon">
+                                                        <span class="iconify"
+                                                            data-icon="akar-icons:instagram-fill"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="bookmark-display-name">
+                                                    <div class="bookmark-display-name-text">Instagram</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-background-wrap">
+                                            <div class="bookmark-background-image"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="bookmark-back">
+                                    <div class="bookmark-control"><button
+                                            class="button bookmark-control-button bookmark-control-left button-link"
+                                            tabindex="1" type="button" title="Move this bookmark left"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M15.422 16.078l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                left</span></button><button
+                                            class="button bookmark-control-button bookmark-control-sort button-link"
+                                            tabindex="1" type="button" title="Drag bookmark to reorder"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Drag bookmark to
+                                                reorder</span></button><button
+                                            class="button bookmark-control-button bookmark-control-right button-link"
+                                            tabindex="1" type="button" title="Move this bookmark right"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                right</span></button><button
+                                            class="button bookmark-control-button bookmark-control-edit button-link"
+                                            tabindex="1" type="button" title="Edit this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Edit this
+                                                bookmark</span></button><button
+                                            class="button bookmark-control-button bookmark-control-remove button-link"
+                                            tabindex="1" type="button" title="Remove this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Remove this
+                                                bookmark</span></button></div>
+                                    <div class="bookmark-url"><span class="bookmark-url-text"
+                                            title="https://www.instagram.com/">instagram.com</span></div>
+                                </div>
+                            </div>
+                            <div class="bookmark is-bookmark-alignment-center-center is-bookmark-order-visual-name is-bookmark-direction-vertical bookmark-tall"
+                                style="--bookmark-transition-delay: 5; --theme-bookmark-item-opacity: 100; --bookmark-display-translate-x: 0; --bookmark-display-translate-y: 0; --bookmark-display-rotate: 0; --bookmark-display-gutter: 25; --bookmark-display-visual-size: 39;  --bookmark-display-name-size: 13; --bookmark-border: 0; --bookmark-display-visual-shadow-size: 100; --bookmark-display-visual-shadow-offset: 0.1; --bookmark-display-visual-shadow-blur: 0.1; --bookmark-display-visual-shadow-opacity: 0.1; --bookmark-display-visual-shadow: 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 8)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 8))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 1))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 16)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 16))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 2))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 32)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 32))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 3))); --bookmark-background-opacity: 100; --bookmark-background-image-url: url(&quot;https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym9va3NoZWxmfGVufDB8fDB8fA%3D%3D&amp;w=1000&amp;q=80&quot;);">
+                                <div class="bookmark-front"><a class="bookmark-link" tabindex="1"
+                                        href="https://drive.google.com/drive/">
+                                        <div class="bookmark-display-wrap">
+                                            <div class="bookmark-display">
+                                                <div class="bookmark-display-visual">
+                                                    <div class="bookmark-display-visual-icon">
+                                                        <span class="iconify" data-icon="fa-brands:google-drive"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="bookmark-display-name">
+                                                    <div class="bookmark-display-name-text">Drive</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-background-wrap">
+                                            <div class="bookmark-background-image"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="bookmark-back">
+                                    <div class="bookmark-control"><button
+                                            class="button bookmark-control-button bookmark-control-left button-link"
+                                            tabindex="1" type="button" title="Move this bookmark left"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M15.422 16.078l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                left</span></button><button
+                                            class="button bookmark-control-button bookmark-control-sort button-link"
+                                            tabindex="1" type="button" title="Drag bookmark to reorder"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Drag bookmark to
+                                                reorder</span></button><button
+                                            class="button bookmark-control-button bookmark-control-right button-link"
+                                            tabindex="1" type="button" title="Move this bookmark right"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                right</span></button><button
+                                            class="button bookmark-control-button bookmark-control-edit button-link"
+                                            tabindex="1" type="button" title="Edit this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Edit this
+                                                bookmark</span></button><button
+                                            class="button bookmark-control-button bookmark-control-remove button-link"
+                                            tabindex="1" type="button" title="Remove this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Remove this
+                                                bookmark</span></button></div>
+                                    <div class="bookmark-url"><span class="bookmark-url-text"
+                                            title="https://drive.google.com/drive/">drive.google.com/drive</span></div>
+                                </div>
+                            </div>
+                            <div class="bookmark is-bookmark-alignment-center-center is-bookmark-order-visual-name is-bookmark-direction-horizontal bookmark-wide"
+                                style="--bookmark-transition-delay: 6; --theme-bookmark-item-opacity: 100; --bookmark-display-translate-x: 0; --bookmark-display-translate-y: 0; --bookmark-display-rotate: 0; --bookmark-display-gutter: 25; --bookmark-display-visual-size: 56; --bookmark-display-visual-image-url: url(&quot;&quot;); --bookmark-display-name-size: 32; --bookmark-border: 0; --bookmark-display-visual-shadow-size: 100; --bookmark-display-visual-shadow-offset: 0.1; --bookmark-display-visual-shadow-blur: 0.1; --bookmark-display-visual-shadow-opacity: 0.1; --bookmark-display-visual-shadow: 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 8)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 8))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 1))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 16)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 16))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 2))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 32)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 32))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 3))); --bookmark-background-opacity: 100; --bookmark-background-image-url: url(&quot;https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1&quot;);">
+                                <div class="bookmark-front"><a class="bookmark-link" tabindex="1"
+                                        href="https://github.com/">
+                                        <div class="bookmark-display-wrap">
+                                            <div class="bookmark-display">
+                                                <div class="bookmark-display-visual">
+                                                    <div class="bookmark-display-visual-icon">
+                                                        <span class="iconify" data-icon="akar-icons:github-fill"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="bookmark-display-name">
+                                                    <div class="bookmark-display-name-text">Github</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-background-wrap">
+                                            <div class="bookmark-background-image"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="bookmark-back">
+                                    <div class="bookmark-control"><button
+                                            class="button bookmark-control-button bookmark-control-left button-link"
+                                            tabindex="1" type="button" title="Move this bookmark left"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M15.422 16.078l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                left</span></button><button
+                                            class="button bookmark-control-button bookmark-control-sort button-link"
+                                            tabindex="1" type="button" title="Drag bookmark to reorder"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Drag bookmark to
+                                                reorder</span></button><button
+                                            class="button bookmark-control-button bookmark-control-right button-link"
+                                            tabindex="1" type="button" title="Move this bookmark right"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                right</span></button><button
+                                            class="button bookmark-control-button bookmark-control-edit button-link"
+                                            tabindex="1" type="button" title="Edit this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Edit this
+                                                bookmark</span></button><button
+                                            class="button bookmark-control-button bookmark-control-remove button-link"
+                                            tabindex="1" type="button" title="Remove this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Remove this
+                                                bookmark</span></button></div>
+                                    <div class="bookmark-url"><span class="bookmark-url-text"
+                                            title="https://github.com/">github.com</span></div>
+                                </div>
+                            </div>
+                            <div class="bookmark is-bookmark-alignment-center-center is-bookmark-order-visual-name is-bookmark-direction-horizontal"
+                                style="--bookmark-transition-delay: 7; --theme-bookmark-item-opacity: 100; --bookmark-display-translate-x: 0; --bookmark-display-translate-y: 0; --bookmark-display-rotate: 0; --bookmark-display-gutter: 23; --bookmark-display-visual-size: 22; --bookmark-display-visual-image-url: url(&quot;&quot;); --bookmark-display-name-size: 13; --bookmark-border: 0; --bookmark-display-visual-shadow-size: 100; --bookmark-display-visual-shadow-offset: 0.1; --bookmark-display-visual-shadow-blur: 0.1; --bookmark-display-visual-shadow-opacity: 0.1; --bookmark-display-visual-shadow: 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 8)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 8))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 1))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 16)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 16))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 2))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 32)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 32))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 3))); --bookmark-background-opacity: 100; --bookmark-background-image-url: url(&quot;https://w0.peakpx.com/wallpaper/669/783/HD-wallpaper-love-ludo-game-naseeb.jpg&quot;);">
+                                <div class="bookmark-front"><a class="bookmark-link" tabindex="1"
+                                        href="https://devdocs.io/">
+                                        <div class="bookmark-display-wrap">
+                                            <div class="bookmark-display">
+                                                <div class="bookmark-display-visual">
+                                                    <div class="bookmark-display-visual-icon">
+                                                        <span class="iconify" data-icon="bx:code-alt"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="bookmark-display-name">
+                                                    <div class="bookmark-display-name-text">Devdocs</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-background-wrap">
+                                            <div class="bookmark-background-image"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="bookmark-back">
+                                    <div class="bookmark-control"><button
+                                            class="button bookmark-control-button bookmark-control-left button-link"
+                                            tabindex="1" type="button" title="Move this bookmark left"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M15.422 16.078l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                left</span></button><button
+                                            class="button bookmark-control-button bookmark-control-sort button-link"
+                                            tabindex="1" type="button" title="Drag bookmark to reorder"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Drag bookmark to
+                                                reorder</span></button><button
+                                            class="button bookmark-control-button bookmark-control-right button-link"
+                                            tabindex="1" type="button" title="Move this bookmark right"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                right</span></button><button
+                                            class="button bookmark-control-button bookmark-control-edit button-link"
+                                            tabindex="1" type="button" title="Edit this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Edit this
+                                                bookmark</span></button><button
+                                            class="button bookmark-control-button bookmark-control-remove button-link"
+                                            tabindex="1" type="button" title="Remove this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Remove this
+                                                bookmark</span></button></div>
+                                    <div class="bookmark-url"><span class="bookmark-url-text"
+                                            title="https://devdocs.io/">devdocs.io</span></div>
+                                </div>
+                            </div>
+                            <div class="bookmark is-bookmark-alignment-center-center is-bookmark-order-visual-name is-bookmark-direction-vertical bookmark-wide"
+                                style="--bookmark-transition-delay: 8; --theme-bookmark-item-opacity: 100; --bookmark-display-translate-x: 0; --bookmark-display-translate-y: 0; --bookmark-display-rotate: 0; --bookmark-display-gutter: 25; --bookmark-display-visual-size: 36; --bookmark-display-visual-image-url: url(&quot;&quot;); --bookmark-display-name-size: 9; --bookmark-border: 0; --bookmark-display-visual-shadow-size: 100; --bookmark-display-visual-shadow-offset: 0.1; --bookmark-display-visual-shadow-blur: 0.1; --bookmark-display-visual-shadow-opacity: 0.1; --bookmark-display-visual-shadow: 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 8)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 8))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 1))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 16)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 16))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 2))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 32)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 32))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 3))); --bookmark-background-opacity: 100; ">
+                                <div class="bookmark-front" id="whatsapp"><a class="bookmark-link" tabindex="1"
+                                        href="https://web.whatsapp.com//">
+                                        <div class="bookmark-display-wrap">
+                                            <div class="bookmark-display">
+                                                <div class="bookmark-display-visual">
+                                                    <div class="bookmark-display-visual-icon">
+                                                        <span class="iconify"
+                                                            data-icon="akar-icons:whatsapp-fill"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="bookmark-display-name">
+                                                    <div class="bookmark-display-name-text">Whatsapp</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-background-wrap">
+                                            <div class="bookmark-background-image"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="bookmark-back">
+                                    <div class="bookmark-control"><button
+                                            class="button bookmark-control-button bookmark-control-left button-link"
+                                            tabindex="1" type="button" title="Move this bookmark left"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M15.422 16.078l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                left</span></button><button
+                                            class="button bookmark-control-button bookmark-control-sort button-link"
+                                            tabindex="1" type="button" title="Drag bookmark to reorder"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Drag bookmark to
+                                                reorder</span></button><button
+                                            class="button bookmark-control-button bookmark-control-right button-link"
+                                            tabindex="1" type="button" title="Move this bookmark right"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                right</span></button><button
+                                            class="button bookmark-control-button bookmark-control-edit button-link"
+                                            tabindex="1" type="button" title="Edit this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Edit this
+                                                bookmark</span></button><button
+                                            class="button bookmark-control-button bookmark-control-remove button-link"
+                                            tabindex="1" type="button" title="Remove this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Remove this
+                                                bookmark</span></button></div>
+                                    <div class="bookmark-url"><span class="bookmark-url-text"
+                                            title="https://web.whatsapp.com//">web.whatsapp.com</span></div>
+                                </div>
+                            </div>
+                            <div class="bookmark is-bookmark-alignment-center-left is-bookmark-order-visual-name is-bookmark-direction-horizontal bookmark-wide"
+                                style="--bookmark-transition-delay: 9; --theme-bookmark-item-opacity: 100; --bookmark-display-translate-x: 17; --bookmark-display-translate-y: 0; --bookmark-display-rotate: 0; --bookmark-display-gutter: 25; --bookmark-display-visual-size: 34; --bookmark-display-visual-image-url: url(&quot;https://i.postimg.cc/GpWcSC1n/mega.png&quot;); --bookmark-display-name-size: 16; --bookmark-border: 0; --bookmark-display-visual-shadow-size: 100; --bookmark-display-visual-shadow-offset: 0.1; --bookmark-display-visual-shadow-blur: 0.1; --bookmark-display-visual-shadow-opacity: 0.1; --bookmark-display-visual-shadow: 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 8)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 8))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 1))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 16)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 16))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 2))), 0 calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-offset) * 32)) * 0.01em) calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-blur) * 32))  * 0.01em)rgba(0, 0, 0, calc(var(--bookmark-display-visual-shadow-size) * calc(calc(var(--bookmark-display-visual-shadow-opacity) / 25) * 3))); --bookmark-background-opacity: 100; --bookmark-background-image-url: url(&quot;https://images.wallpapersden.com/image/download/red-eclipse-digital-art_bGlqaGqUmZqaraWkpJRobWllrWdma2U.jpg&quot;);">
+                                <div class="bookmark-front" id="mega"><a class="bookmark-link" tabindex="1"
+                                        href="https://mega.nz/">
+                                        <div class="bookmark-display-wrap">
+                                            <div class="bookmark-display">
+                                                <div class="bookmark-display-visual">
+                                                    <div class="bookmark-display-visual-image"></div>
+                                                </div>
+                                                <div class="bookmark-display-name">
+                                                    <div class="bookmark-display-name-text">Mega</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-background-wrap">
+                                            <div class="bookmark-background-image"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="bookmark-back">
+                                    <div class="bookmark-control"><button
+                                            class="button bookmark-control-button bookmark-control-left button-link"
+                                            tabindex="1" type="button" title="Move this bookmark left"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M15.422 16.078l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                left</span></button><button
+                                            class="button bookmark-control-button bookmark-control-sort button-link"
+                                            tabindex="1" type="button" title="Drag bookmark to reorder"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Drag bookmark to
+                                                reorder</span></button><button
+                                            class="button bookmark-control-button bookmark-control-right button-link"
+                                            tabindex="1" type="button" title="Move this bookmark right"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Move this bookmark
+                                                right</span></button><button
+                                            class="button bookmark-control-button bookmark-control-edit button-link"
+                                            tabindex="1" type="button" title="Edit this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828c0.375-0.375 1.031-0.375 1.406 0l2.344 2.344c0.375 0.375 0.375 1.031 0 1.406zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Edit this
+                                                bookmark</span></button><button
+                                            class="button bookmark-control-button bookmark-control-remove button-link"
+                                            tabindex="1" type="button" title="Remove this bookmark"
+                                            disabled="disabled"><span class="icon"><svg version="1.1"
+                                                    viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                                    <path
+                                                        d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z">
+                                                    </path>
+                                                </svg></span><span class="button-text sr-only">Remove this
+                                                bookmark</span></button></div>
+                                    <div class="bookmark-url"><span class="bookmark-url-text"
+                                            title="https://mega.nz">mega.nz</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
